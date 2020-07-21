@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kiit_app/Schools/SCE.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-
-class Year2 extends StatelessWidget {
+class SCE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
                 centerTitle: true,
 
-        title: Text("Second Year" , style: TextStyle(
+        title: Text("Computer Science Subjects" , style: TextStyle(
           color: Colors.white,
         ),),
         backgroundColor: Color(0xFF06292e),
@@ -20,12 +19,7 @@ class Year2 extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SCE()
-                        ),
-                      );
+        launch('https://drive.google.com/drive/folders/1T0FVO6a1S5ZsPhROwLY5C2yBo59sa-Ud?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -52,7 +46,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Computer Science",
+                          "Data Structures",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
