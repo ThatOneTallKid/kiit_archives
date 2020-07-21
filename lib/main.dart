@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Kiit App',
+      title: 'KiiT Archives',
       debugShowCheckedModeBanner: false,
       home: Home(),
 
