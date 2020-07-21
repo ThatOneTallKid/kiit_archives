@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
                     colors: [
                       Color(0xFF06292e),
                       Color(0xFF0e6959),
-                    ]
+                    ],
                   ),
                  
                 ),
@@ -59,6 +59,7 @@ class _HomeState extends State<Home> {
                             const PopupMenuItem<Pops>(
                               value: Pops.want,
                               child: Text('Want to contribute?'),
+                            
                             ),
                           ],
                         ),
@@ -72,7 +73,7 @@ class _HomeState extends State<Home> {
                         
                           
                           Image.asset("assets/images/stu.png",
-                          width: 240,
+                          width: 195,
                           
                           fit: BoxFit.fitWidth,
                           alignment: Alignment.topLeft,
@@ -81,11 +82,11 @@ class _HomeState extends State<Home> {
                           
                           Positioned(
                             
-                            left: 240,
+                            left: 195,
                            
                             child: Text("All you need \nfor your semester \nin one place",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                             color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),
