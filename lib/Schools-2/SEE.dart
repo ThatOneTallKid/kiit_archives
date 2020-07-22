@@ -109,7 +109,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1tvTqdUwfor_N8t3Y4NJPgnQzLQyJ2KML?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
