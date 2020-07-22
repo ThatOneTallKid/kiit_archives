@@ -46,7 +46,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Data Structures (3rd Sem)",
+                          "DSA (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -362,7 +362,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Operating System (4th Sem)",
+                          "OS (4th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -452,7 +452,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Web Technology (4th Sem)",
+                          "WT (4th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,

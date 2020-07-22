@@ -68,6 +68,51 @@ class Year2 extends StatelessWidget {
       ),
           ),
     ),
+     GestureDetector(
+      onTap: () {
+         
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "School of Electrical",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
               ]
             ),)
           ],
