@@ -13,7 +13,22 @@ class Year4 extends StatelessWidget {
         ),),
         backgroundColor: Color(0xFF06292e),
       ),
+      body: Center(
+        child: Container(
+          child: RichText(
+            text: TextSpan(
 
+              children: [
+                TextSpan(
+                   text: 'Page Under Construction\n           Help us grow\n     By Sending notes on \nmaverik.ai.code@gmail.com', style: TextStyle(color: Colors.black87,
+               fontSize: 20
+                )
+                ),
+              ]
+            )
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
           elevation: 20,
           child: Container(
