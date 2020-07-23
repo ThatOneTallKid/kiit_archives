@@ -64,7 +64,7 @@ class SCE extends StatelessWidget {
     ),
               GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1sq1Ys4UsneFhNz4ZRXIeUKsyT8Rv1ngx?usp=sharing');
                       },
           child: InkWell(
                       child: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kiit_app/misc/Contribution.dart';
 import 'package:kiit_app/views/year1.dart';
 import 'package:kiit_app/views/year2.dart';
 import 'package:kiit_app/views/year3.dart';
@@ -15,6 +16,7 @@ class Home extends StatefulWidget {
 
 
 class _HomeState extends State<Home> {
+  var items = [{'name': 'Want to contribute?', 'value':0}];
    final barcolor = const Color(0xFF06292e);
   final textcolor = const Color(0xFF28bd90);
  
@@ -49,19 +51,23 @@ class _HomeState extends State<Home> {
                     Align(
                       alignment: Alignment.topRight,
                       child: 
-                        PopupMenuButton <Pops>(
-                          onSelected: (Pops result){
-                            setState(() {
-                            });
+                        PopupMenuButton (
+                          onSelected: (x) {
+                            if(x ==0) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Contri())
+                              );
+                            }
                           },
+                          
                           icon: Icon(Icons.more_vert, color: Colors.white,),
-                          itemBuilder: (BuildContext context) => <PopupMenuEntry<Pops>> [
-                            const PopupMenuItem<Pops>(
-                              value: Pops.want,
-                              child: Text('Want to contribute?'),
-                            
-                            ),
-                          ],
+                          itemBuilder: (BuildContext context) => items
+                          .map<PopupMenuItem>((element) => PopupMenuItem(
+                            child:Text(element['name']),
+                            value: element['value'],
+                          ))
+                          .toList()
                         ),
                       
                            ), 
