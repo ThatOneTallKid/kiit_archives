@@ -249,8 +249,15 @@ class SM extends StatelessWidget {
       builder: (BuildContext context) {
         // return object of type Dialog
         return AlertDialog(
-          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
-          content: new Text("Expect it by next update"),
+          title: Column(
+              children:[
+                Text("Uh-Oh! Notes are\n    being written", style: TextStyle(color: Color(0xFF0e6959)),),
+                Image.asset('assets/images/alert.gif',
+                  width: 50, height: 50, fit: BoxFit.contain,),
+              ]
+          ),
+          content: new Text("   Brought to you soon with\n          our next Update."),
+
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
             new FlatButton(
