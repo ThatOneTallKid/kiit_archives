@@ -46,6 +46,9 @@ flutter:
   assets:
    - assets/images/
    - assets/images/typewriter.gif
+   - assets/images/book.gif
+   - assets/images/book2.gif
+   - assets/images/book3.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
