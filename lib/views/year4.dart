@@ -13,22 +13,50 @@ class Year4 extends StatelessWidget {
         ),),
         backgroundColor: Color(0xFF06292e),
       ),
-      body: Center(
-        child: Container(
-          child: RichText(
-            text: TextSpan(
 
-              children: [
-                TextSpan(
-                   text: 'Page Under Construction\n           Help us grow\n     By Sending notes on \nmaverik.ai.code@gmail.com', style: TextStyle(color: Colors.black87,
-               fontSize: 20
-                )
+      body: Stack(
+        fit: StackFit.expand,
+        children: <Widget>[
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Image.asset('assets/images/typewriter.gif',
+                        width: 200,
+
+                        fit: BoxFit.fitWidth,
+                        alignment: Alignment.topLeft,
+
+                      ),
+
+                      Text("  Page Under Construction.\n             Help us grow\n       by Sending notes on",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      Text("  maverick.ai.code@gmail.com",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Color(0xFF06292e),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ]
-            )
-          ),
-        ),
+              )
+            ],
+          )
+        ],
       ),
+
       bottomNavigationBar: BottomAppBar(
           elevation: 20,
           child: Container(

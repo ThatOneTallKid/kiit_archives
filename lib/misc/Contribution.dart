@@ -27,23 +27,30 @@ class Contri extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset('assets/images/typewriter.gif',
-                        width: 195,
+                      Text(" We're in it Together!",
+                        style: TextStyle(
+                          fontSize: 21,
+                          color: Color(0xFF06292e),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      Image.asset('assets/images/book3.gif',
+                        width: 300,
 
                         fit: BoxFit.fitWidth,
                         alignment: Alignment.topLeft,
 
                       ),
 
-                      Text("  Page Under Construction.\n             Help us grow\n       by Sending notes on",
+                      Text("  You can Help us grow by\n       sending notes on",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           color: Colors.black87,
                         ),
                       ),
                       Text("  maverick.ai.code@gmail.com",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 21,
                           color: Color(0xFF06292e),
                           fontWeight: FontWeight.w500,
                         ),
