@@ -154,7 +154,7 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1QljHAEht660x0RWPiPKSW4flaj0wg3Cw?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -200,7 +200,25 @@ class SE extends StatelessWidget {
     
      GestureDetector(
       onTap: () {
-        launch('');
+         showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
                       },
           child: InkWell(
                       child: Container(
@@ -245,7 +263,7 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1esVh8OVxRRNpHZanE8JlbSMoqPHpWaW3?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -290,7 +308,25 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+            showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
                       },
           child: InkWell(
                       child: Container(
@@ -317,7 +353,7 @@ class SE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "",
+                          "T&IM (3rd sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -335,7 +371,7 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/18RU3Lb8SZB8CL3qaTcLc1RIOFOPtzuHS?usp=sharing');
+        launch('https://drive.google.com/drive/folders/1gUGSKL64vnJSZsFfCXkRfmSUZxf9xEV_?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -362,7 +398,7 @@ class SE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "OS (4th Sem)",
+                          "DC & Sync (4th sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -380,7 +416,7 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1yujJZBvqiZKD007JVPn__7E7fxG72kKJ?usp=sharing');
+        launch('https://drive.google.com/drive/folders/1R3uvezC5VjeY_TgHXujLbteuJGBO5kZh?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -407,7 +443,7 @@ class SE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "PDC (4th Sem)",
+                          "Dig. Circuit (4th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -425,7 +461,7 @@ class SE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1qMGs2QiYxBfc8UWRrB1oYnZ3xbislKJm?usp=sharing');
+        launch('https://drive.google.com/drive/folders/1J7EH8IcapuXZSgBugeN2VBaVM4t_cWyI?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -452,7 +488,7 @@ class SE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "WT (4th Sem)",
+                          "GT&D (4th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -468,6 +504,142 @@ class SE extends StatelessWidget {
       ),
           ),
     ),
+     GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1JFvXOIVqEuWQavg1455_5m2rW7DxkMIK?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "LCS (4th Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+     GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1iUOpVBJpXDvDu2Rhze7BKUM2javV3vtk?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "PE (4th Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+     GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1WpSXx7ElZtSyXOfDcOZUOwtaFjjtucRX?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "SS (4th Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+   
               ]
             ),)
           ],

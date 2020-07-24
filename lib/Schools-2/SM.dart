@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kiit_app/Schools-2/SC.dart';
-import 'package:kiit_app/Schools-2/SCE.dart';
-import 'package:kiit_app/Schools-2/SE.dart';
-import 'package:kiit_app/Schools-2/SEE.dart';
-import 'package:kiit_app/Schools-2/SM.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-
-class Year2 extends StatelessWidget {
+class SM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
                 centerTitle: true,
 
-        title: Text("Second Year" , style: TextStyle(
+        title: Text("Mechanical Subjects" , style: TextStyle(
           color: Colors.white,
         ),),
         backgroundColor: Color(0xFF06292e),
@@ -24,12 +19,7 @@ class Year2 extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SCE()
-                        ),
-                      );
+        launch('https://lecturenotes.in/notes/18503-note-for-fluid-dynamics-and-hydraulic-machines-fdhm-by-satya-prakash-kar?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -56,7 +46,97 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Computer Science",
+                          "FMHM (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1pFAmMPT3p5dk-Uv9tQKpES57ckzizQTT?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "MSE (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+        launch('https://lecturenotes.in/notes/17915-note-for-mechanics-of-solids-mos-by-kajole-agrawal?reading=true');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "MOS (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -74,12 +154,7 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SE()
-                        ),
-                      );
+        launch('https://drive.google.com/drive/folders/1dsdR0dSlOBEyEXWRgnw2RrWXb_O9ybd_?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -106,7 +181,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Electrical",
+                          "ET (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -124,12 +199,7 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SEE()
-                        ),
-                      );
+        launch('https://drive.google.com/drive/folders/1tvTqdUwfor_N8t3Y4NJPgnQzLQyJ2KML?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -156,7 +226,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Electronics",
+                          "Maths-3 (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -174,12 +244,25 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SM()
-                        ),
-                      );
+        showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
                       },
           child: InkWell(
                       child: Container(
@@ -206,7 +289,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Mechanics",
+                          "PEE(3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -222,56 +305,7 @@ class Year2 extends StatelessWidget {
       ),
           ),
     ),
-     GestureDetector(
-      onTap: () {
-          Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SC()
-                        ),
-                      );
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "School of Civil",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
+    
     
               ]
             ),)
@@ -317,4 +351,4 @@ class Year2 extends StatelessWidget {
         ),
     );
   }
-}
+} 

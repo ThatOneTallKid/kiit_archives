@@ -125,51 +125,7 @@ class SEE extends StatelessWidget {
       ),
           ),
     ),
-    GestureDetector(
-      onTap: () {
-        launch('https://drive.google.com/drive/folders/1T0FVO6a1S5ZsPhROwLY5C2yBo59sa-Ud?usp=sharing');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "DSA (3rd Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
+    
      GestureDetector(
       onTap: () {
         launch('https://drive.google.com/drive/folders/1OZR4mFgQh2Imyc7e9tZXC8Dbb_WkXdAV?usp=sharing');
@@ -262,7 +218,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1QljHAEht660x0RWPiPKSW4flaj0wg3Cw?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -308,7 +264,25 @@ class SEE extends StatelessWidget {
     
      GestureDetector(
       onTap: () {
-        launch('');
+            showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
                       },
           child: InkWell(
                       child: Container(
@@ -353,7 +327,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1esVh8OVxRRNpHZanE8JlbSMoqPHpWaW3?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -398,7 +372,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1qZJ9xfsxdM5teRBYiIZesJ98UUopDn66?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -443,7 +417,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/11ieDgN5d0LjW2rIlgzZN3ML988Qb2mB4?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -488,7 +462,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1yujJZBvqiZKD007JVPn__7E7fxG72kKJ?usp=sharing');
+        launch('https://drive.google.com/drive/folders/1d2mVhww4qfpT8CZEFUygwf-mfcjjTqCe?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -531,9 +505,28 @@ class SEE extends StatelessWidget {
       ),
           ),
     ),
-     GestureDetector(
+     
+    GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1qMGs2QiYxBfc8UWRrB1oYnZ3xbislKJm?usp=sharing');
+            showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
                       },
           child: InkWell(
                       child: Container(
@@ -560,7 +553,133 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "WT (4th Sem)",
+                          "PSS (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+            showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "T&IM (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+            showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
+          content: new Text("Expect it by next update"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "PMI (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
