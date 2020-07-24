@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kiit_app/Schools-3/SC.dart';
 import 'package:kiit_app/Schools-3/SCE.dart';
 import 'package:kiit_app/Schools-3/SE.dart';
 import 'package:kiit_app/Schools-3/SEE.dart';
@@ -223,7 +224,12 @@ class Year3 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         
+          Navigator.of(context)
+                      .push(
+                        MaterialPageRoute(
+                          builder: (context) => SC()
+                        ),
+                      );
                       },
           child: InkWell(
                       child: Container(
