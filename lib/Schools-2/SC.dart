@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kiit_app/Schools-2/SC.dart';
-import 'package:kiit_app/Schools-2/SCE.dart';
-import 'package:kiit_app/Schools-2/SE.dart';
-import 'package:kiit_app/Schools-2/SEE.dart';
-import 'package:kiit_app/Schools-2/SM.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-
-class Year2 extends StatelessWidget {
+class SC extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
                 centerTitle: true,
 
-        title: Text("Second Year" , style: TextStyle(
+        title: Text("Civil Subjects" , style: TextStyle(
           color: Colors.white,
         ),),
         backgroundColor: Color(0xFF06292e),
@@ -24,12 +19,7 @@ class Year2 extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SCE()
-                        ),
-                      );
+        launch('https://drive.google.com/drive/folders/1nRHFkajTq0PIDawsP-PS0Dk75A4sDu9u?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -56,7 +46,97 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Computer Science",
+                          "FM(3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+        launch('https://lecturenotes.in/notes/17823-note-for-mechanics-of-solids-mos-by-kajole-agrawal?reading=true');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "MOM (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1U-ovmM9xlPoVIdcefL3ThY8Dnn11k6vo?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "ENV Sci (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -74,12 +154,7 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SE()
-                        ),
-                      );
+        launch('https://lecturenotes.in/notes/18087-note-for-surveying-1-s-1-by-yogesh-sagar?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -106,7 +181,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Electrical",
+                          "S&G (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -124,12 +199,7 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SEE()
-                        ),
-                      );
+        launch('https://lecturenotes.in/notes/2803-note-for-building-materials-and-building-construction-bmbc-by-prajnya-mohanty?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -156,7 +226,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Electronics",
+                          "M&C (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -174,12 +244,7 @@ class Year2 extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-         Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SM()
-                        ),
-                      );
+      launch('https://drive.google.com/drive/folders/11ieDgN5d0LjW2rIlgzZN3ML988Qb2mB4?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -206,7 +271,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Mechanics",
+                          "EE(3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -222,14 +287,10 @@ class Year2 extends StatelessWidget {
       ),
           ),
     ),
+    
      GestureDetector(
       onTap: () {
-          Navigator.of(context)
-                      .push(
-                        MaterialPageRoute(
-                          builder: (context) => SC()
-                        ),
-                      );
+      launch('https://drive.google.com/drive/folders/1QljHAEht660x0RWPiPKSW4flaj0wg3Cw?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -256,7 +317,7 @@ class Year2 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Civil",
+                          "BC (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -272,6 +333,7 @@ class Year2 extends StatelessWidget {
       ),
           ),
     ),
+    
     
               ]
             ),)
@@ -317,4 +379,4 @@ class Year2 extends StatelessWidget {
         ),
     );
   }
-}
+} 
