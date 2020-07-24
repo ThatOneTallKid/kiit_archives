@@ -19,7 +19,7 @@ class SCE extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1nRYRZ-YOa0XOm_nObk514zbMDfQAm0WO?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -46,7 +46,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "HPC (5th Sem)",
+                          "HPCA (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -172,7 +172,7 @@ class SCE extends StatelessWidget {
     ),
               GestureDetector(
       onTap: () {
-        launch('https://lecturenotes.in/notes/44728-note-for-software-engineering-se-by-shreyangi-saxena');
+        launch('https://drive.google.com/drive/folders/1UwEeUYac2fTNGXBWP8Pi28OcHvmuA7d9?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -219,7 +219,7 @@ class SCE extends StatelessWidget {
       
               GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://lecturenotes.in/notes/24420-note-for-formal-languages-and-automata-theory-flat-by-debasish-mahana?reading=true');
                       },
           child: InkWell(
                       child: Container(
