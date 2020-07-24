@@ -4,7 +4,7 @@ class Contri extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
       appBar: AppBar(
                 centerTitle: true,
 
@@ -13,32 +13,62 @@ class Contri extends StatelessWidget {
         ),),
         backgroundColor: Color(0xFF06292e),
       ),
-      body: Center(
-        child: Container(
-          child: RichText(
-            text: TextSpan(
 
-              children: [
-                TextSpan(
-                   text: 'Page Under Construction\n           Help us grow\n     By Sending notes on \nmaverik.ai.code@gmail.com', style: TextStyle(color: Colors.black87,
-               fontSize: 20
-                )
+      body: Stack(
+        fit: StackFit.expand,
+        children: <Widget>[
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Image.asset('assets/images/typewriter.gif',
+                        width: 195,
+
+                        fit: BoxFit.fitWidth,
+                        alignment: Alignment.topLeft,
+
+                      ),
+
+                      Text("  Page Under Construction.\n             Help us grow\n       by Sending notes on",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      Text("  maverick.ai.code@gmail.com",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Color(0xFF06292e),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ]
-            )
-          ),
-        ),
+              )
+            ],
+          )
+        ],
       ),
+
+
+
       bottomNavigationBar: BottomAppBar(
           elevation: 20,
           child: Container(
              padding: EdgeInsets.symmetric(vertical: 10),
                       child: RichText(
-                
+
                 textAlign: TextAlign.center,
                text: TextSpan(
                  style: TextStyle(
-                   
+
                  ),
                 children: [
 
@@ -46,7 +76,7 @@ class Contri extends StatelessWidget {
                TextSpan(
                  text: 'Made with', style: TextStyle(color: Colors.white,
                fontSize: 20,
-               
+
                )),
               WidgetSpan(
               child: Padding(
@@ -62,10 +92,10 @@ class Contri extends StatelessWidget {
          ),
               ),
           ),
-                      
-          
+
+
           color: Color(0xFF06292e),
-          
+
         ),
     );
   }
