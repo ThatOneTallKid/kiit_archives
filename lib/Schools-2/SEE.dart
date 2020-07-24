@@ -508,25 +508,7 @@ class SEE extends StatelessWidget {
      
     GestureDetector(
       onTap: () {
-            showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        // return object of type Dialog
-        return AlertDialog(
-          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
-          content: new Text("Expect it by next update"),
-          actions: <Widget>[
-            // usually buttons at the bottom of the dialog
-            new FlatButton(
-              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
+             launch('https://drive.google.com/drive/folders/1ruRBFc5iwUn0FUhsz3oxZWfqDXD-7zyr?usp=sharing');
                       },
           child: InkWell(
                       child: Container(

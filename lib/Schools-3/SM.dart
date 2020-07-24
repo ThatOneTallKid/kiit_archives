@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class SCE extends StatelessWidget {
+class SM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
                 centerTitle: true,
 
-        title: Text("Computer Science Subjects" , style: TextStyle(
+        title: Text("Mechanical Subjects" , style: TextStyle(
           color: Colors.white,
         ),),
         backgroundColor: Color(0xFF06292e),
@@ -19,7 +19,7 @@ class SCE extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1nRYRZ-YOa0XOm_nObk514zbMDfQAm0WO?usp=sharing');
+        launch('https://lecturenotes.in/notes/18503-note-for-fluid-dynamics-and-hydraulic-machines-fdhm-by-satya-prakash-kar?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -46,7 +46,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "HPCA (5th Sem)",
+                          "FMHM (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -62,9 +62,9 @@ class SCE extends StatelessWidget {
       ),
           ),
     ),
-              GestureDetector(
+    GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1sq1Ys4UsneFhNz4ZRXIeUKsyT8Rv1ngx?usp=sharing');
+        launch('https://drive.google.com/drive/folders/1pFAmMPT3p5dk-Uv9tQKpES57ckzizQTT?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -91,7 +91,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "CN (5th Sem)",
+                          "MSE (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -107,9 +107,144 @@ class SCE extends StatelessWidget {
       ),
           ),
     ),
-              GestureDetector(
+    GestureDetector(
       onTap: () {
-         showDialog(
+        launch('https://lecturenotes.in/notes/17915-note-for-mechanics-of-solids-mos-by-kajole-agrawal?reading=true');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "MOS (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+     GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1dsdR0dSlOBEyEXWRgnw2RrWXb_O9ybd_?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "ET (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+     GestureDetector(
+      onTap: () {
+        launch('https://drive.google.com/drive/folders/1tvTqdUwfor_N8t3Y4NJPgnQzLQyJ2KML?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "Maths-3 (3rd Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+     GestureDetector(
+      onTap: () {
+        showDialog(
       context: context,
       builder: (BuildContext context) {
         // return object of type Dialog
@@ -154,324 +289,7 @@ class SCE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "DAA (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-              GestureDetector(
-      onTap: () {
-        launch('https://drive.google.com/drive/folders/1UwEeUYac2fTNGXBWP8Pi28OcHvmuA7d9?usp=sharing');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "SE (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-      
-      
-              GestureDetector(
-      onTap: () {
-        launch('https://lecturenotes.in/notes/24420-note-for-formal-languages-and-automata-theory-flat-by-debasish-mahana?reading=true');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "FLAT (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-              GestureDetector(
-      onTap: () {
-        launch('https://drive.google.com/drive/folders/153uOT3OElFpn3yDqmDtEG4m1nVXA4LiK?usp=sharing');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "DBMS (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-       GestureDetector(
-      onTap: () {
-        launch('https://lecturenotes.in/notes/27631-note-for-computer-graphics-cg-by-animesh-dutta?reading=true');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "CG (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-       GestureDetector(
-      onTap: () {
-        launch('https://lecturenotes.in/notes/27617-note-for-compiler-design-cd-by-shubham-kumar?reading=true');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "CD (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-       GestureDetector(
-      onTap: () {
-        launch('https://lecturenotes.in/notes/14184-note-for-artificial-intelligence-ai-by-sankarsan-sahoo?reading=true');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "AI (5th Sem)",
-                          style: TextStyle(
-                            
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20,
-                            color: Color(0xFF0e6959),
-                          ),
-                        ),
-                     ),
-                    
-                    ],
-                    
-                  ),
-      ),
-          ),
-    ),
-       GestureDetector(
-      onTap: () {
-        launch('https://lecturenotes.in/notes/38-notes-for-data-mining-and-data-warehousing-dmdw-by-verified-writer?reading=true');
-                      },
-          child: InkWell(
-                      child: Container(
-        
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: Color(0xFF06292e),
-
-                    ),
-                  ),
-                   
-                  child: Row(
-                    
-                    
-                    children: <Widget>[
-                       
-                      Image.asset("assets/images/books.png"),
-                     Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Text(
-                          "DMDW (5th Sem)",
+                          "PEE(3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -533,4 +351,4 @@ class SCE extends StatelessWidget {
         ),
     );
   }
-}
+} 

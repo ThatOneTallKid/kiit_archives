@@ -64,25 +64,7 @@ class SCE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-          showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        // return object of type Dialog
-        return AlertDialog(
-          title: new Text("Oh shoot! Notes being written", style: TextStyle(color: Color(0xFF0e6959)),),
-          content: new Text("Expect it by next update"),
-          actions: <Widget>[
-            // usually buttons at the bottom of the dialog
-            new FlatButton(
-              child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
+         launch('https://drive.google.com/drive/folders/1xcC375vcCuf6qDoHd_4_7mPsLphXyHuV?usp=sharing');
                                 },
           child: InkWell(
                       child: Container(
@@ -127,7 +109,7 @@ class SCE extends StatelessWidget {
     ),
     GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1-m0nUZtvpzeAL_yOAzOtpRRaR6mvhVal?usp=sharing');
+        launch('https://drive.google.com/drive/folders/106PbDMOFslZvxea_xgfGUxd1rIfwcwJe?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -562,6 +544,51 @@ class SCE extends StatelessWidget {
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
                           "WT (4th Sem)",
+                          style: TextStyle(
+                            
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20,
+                            color: Color(0xFF0e6959),
+                          ),
+                        ),
+                     ),
+                    
+                    ],
+                    
+                  ),
+      ),
+          ),
+    ),
+    GestureDetector(
+      onTap: () {
+            launch('https://drive.google.com/drive/folders/1ruRBFc5iwUn0FUhsz3oxZWfqDXD-7zyr?usp=sharing');
+                      },
+          child: InkWell(
+                      child: Container(
+        
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: Color(0xFF06292e),
+
+                    ),
+                  ),
+                   
+                  child: Row(
+                    
+                    
+                    children: <Widget>[
+                       
+                      Image.asset("assets/images/books.png"),
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Text(
+                          "PSS (3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,

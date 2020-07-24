@@ -19,7 +19,7 @@ class SEE extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1T0FVO6a1S5ZsPhROwLY5C2yBo59sa-Ud?usp=sharing');
+        launch('https://lecturenotes.in/notes/17509-note-for-communication-engineering-ce-by-abhishek-singh?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -46,7 +46,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "DSA (3rd Sem)",
+                          "CE (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -64,7 +64,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('https://drive.google.com/drive/folders/1OZR4mFgQh2Imyc7e9tZXC8Dbb_WkXdAV?usp=sharing');
+        launch('https://lecturenotes.in/notes/26583-note-for-digital-signal-processing-dsp-by-soubhik-roy?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -91,7 +91,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "AEC (3rd Sem)",
+                          "DSP (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -109,7 +109,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://lecturenotes.in/notes/17426-note-for-data-communication-and-computer-network-dccn-by-abhishek-kumar');
                       },
           child: InkWell(
                       child: Container(
@@ -136,7 +136,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Maths-3 (3rd Sem)",
+                          "DCN (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -154,7 +154,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://lecturenotes.in/notes/85-notes-for-microwave-engineering-me-by-lopamudra-mishra');
                       },
           child: InkWell(
                       child: Container(
@@ -181,7 +181,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Business Comm(3rd Sem)",
+                          "ME (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -200,7 +200,7 @@ class SEE extends StatelessWidget {
     
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://lecturenotes.in/notes/22940-note-for-digital-communication-techniques-dct-by-pratip-mal?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -227,7 +227,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "ECA (3rd Sem)",
+                          "DCT (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -245,7 +245,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://lecturenotes.in/notes/28858-note-for-vlsi-design-vlsi-by-pratip-mal?reading=true');
                       },
           child: InkWell(
                       child: Container(
@@ -272,7 +272,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "EEM (3rd Sem)",
+                          "VLSI (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -290,7 +290,7 @@ class SEE extends StatelessWidget {
     ),
      GestureDetector(
       onTap: () {
-        launch('');
+        launch('https://drive.google.com/drive/folders/1iUOpVBJpXDvDu2Rhze7BKUM2javV3vtk?usp=sharing');
                       },
           child: InkWell(
                       child: Container(
@@ -317,7 +317,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "DE (3rd Sem)",
+                          "PE (5th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
