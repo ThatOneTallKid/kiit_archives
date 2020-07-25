@@ -256,7 +256,8 @@ class SM extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("   Brought to you soon with\n          our next Update."),
+          
+          content: new Text("       Brought to you soon with\n               our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
