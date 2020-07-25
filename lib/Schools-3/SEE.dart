@@ -334,9 +334,35 @@ class SEE extends StatelessWidget {
           ),
     ),
      GestureDetector(
-      onTap: () {
-        launch('');
-                      },
+       onTap: () {
+         showDialog(
+           context: context,
+           builder: (BuildContext context) {
+             // return object of type Dialog
+             return AlertDialog(
+               title: Column(
+                   children:[
+                     Text("Uh-Oh! Notes are\n    being written", style: TextStyle(color: Color(0xFF0e6959)),),
+                     Image.asset('assets/images/alert.gif',
+                       width: 50, height: 50, fit: BoxFit.contain,),
+                   ]
+               ),
+
+               content: new Text("   Brought to you soon with\n           our next Update."),
+
+               actions: <Widget>[
+                 // usually buttons at the bottom of the dialog
+                 new FlatButton(
+                   child: new Text("Close", style: TextStyle(color: Colors.lightGreen),),
+                   onPressed: () {
+                     Navigator.of(context).pop();
+                   },
+                 ),
+               ],
+             );
+           },
+         );
+       },
           child: InkWell(
                       child: Container(
         
@@ -407,7 +433,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Signals & Netwok",
+                          "Signals & Network",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,

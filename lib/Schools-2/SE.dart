@@ -181,7 +181,7 @@ class SE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Business Comm(3rd Sem)",
+                          "B.Com(3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -212,7 +212,7 @@ class SE extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("       Brought to you soon with\n               our next Update."),
+          content: new Text("   Brought to you soon with\n           our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
@@ -327,7 +327,7 @@ class SE extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("       Brought to you soon with\n               our next Update."),
+          content: new Text("   Brought to you soon with\n           our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
@@ -410,13 +410,13 @@ class SE extends StatelessWidget {
                        
                       Image.asset("assets/images/books.png"),
                      Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                       padding: const EdgeInsets.symmetric(horizontal: 14),
                         child: Text(
                           "DC & Sync (4th sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -455,13 +455,13 @@ class SE extends StatelessWidget {
                        
                       Image.asset("assets/images/books.png"),
                      Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                       padding: const EdgeInsets.symmetric(horizontal: 14),
                         child: Text(
                           "Dig. Circuit (4th Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),

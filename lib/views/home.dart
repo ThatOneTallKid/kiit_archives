@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
                         
                           
                           Image.asset("assets/images/stu.png",
-                          width: 195,
+                          width: 190,
                           
                           fit: BoxFit.fitWidth,
                           alignment: Alignment.topLeft,
@@ -88,11 +88,11 @@ class _HomeState extends State<Home> {
                           
                           Positioned(
                             
-                            left: 195,
+                            left: 190,
                            
                             child: Text("All you need \nfor your semester \nin one place",
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 17,
                             color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),

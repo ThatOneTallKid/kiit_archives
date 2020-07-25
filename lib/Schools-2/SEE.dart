@@ -252,7 +252,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Business Comm(3rd Sem)",
+                          "B.Com(3rd Sem)",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -283,7 +283,7 @@ class SEE extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("       Brought to you soon with\n               our next Update."),
+          content: new Text("   Brought to you soon with\n           our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
@@ -503,7 +503,7 @@ class SEE extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "Signals & Netwok",
+                          "Signals & Network",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -579,7 +579,7 @@ class SEE extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("       Brought to you soon with\n               our next Update."),
+          content: new Text("   Brought to you soon with\n           our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
@@ -649,7 +649,7 @@ class SEE extends StatelessWidget {
                   width: 50, height: 50, fit: BoxFit.contain,),
               ]
           ),
-          content: new Text("       Brought to you soon with\n               our next Update."),
+          content: new Text("   Brought to you soon with\n           our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
