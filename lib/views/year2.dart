@@ -60,7 +60,7 @@ class Year2 extends StatelessWidget {
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -110,7 +110,7 @@ class Year2 extends StatelessWidget {
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -160,7 +160,7 @@ class Year2 extends StatelessWidget {
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -204,13 +204,13 @@ class Year2 extends StatelessWidget {
                        
                       Image.asset("assets/images/books.png"),
                      Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
+                       padding: const EdgeInsets.symmetric(horizontal: 14),
                         child: Text(
                           "School of Mechanical",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -260,7 +260,7 @@ class Year2 extends StatelessWidget {
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
-                            fontSize: 20,
+                            fontSize: 19,
                             color: Color(0xFF0e6959),
                           ),
                         ),
@@ -274,7 +274,21 @@ class Year2 extends StatelessWidget {
     ),
     
               ]
-            ),)
+            ),),
+            Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    'assets/images/book4.gif',
+                    width: 170,
+                    fit: BoxFit.fitWidth,
+                    alignment: Alignment.topLeft,
+                  ),
+                  Text('\n'),
+                ],
+              ),
+            ),
           ],
         ),
       bottomNavigationBar: BottomAppBar(

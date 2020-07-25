@@ -199,7 +199,27 @@ class SE extends StatelessWidget {
     ),
     
               ]
-            ),)
+            ),),
+            Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    'assets/images/copy.gif',
+                    width: 220,
+                    fit: BoxFit.fitWidth,
+                    alignment: Alignment.topLeft,
+                  ),
+                  Text(
+                    " \nCurrently Collecting Notes, \n              Stay Tuned!\n",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Color(0xFF06292e),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       bottomNavigationBar: BottomAppBar(
