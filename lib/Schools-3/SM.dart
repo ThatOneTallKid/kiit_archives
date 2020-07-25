@@ -110,9 +110,15 @@ class SM extends StatelessWidget {
     
     
               ]
-            ),)
+            ),
+            ),
+            
+            
           ],
+          
         ),
+        
+        
       bottomNavigationBar: BottomAppBar(
           elevation: 20,
           child: Container(
