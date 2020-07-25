@@ -56,7 +56,7 @@ class Year3 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Computer Science",
+                          "School of Computer",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
@@ -206,7 +206,7 @@ class Year3 extends StatelessWidget {
                      Padding(
                        padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
-                          "School of Mechanics",
+                          "School of Mechanical",
                           style: TextStyle(
                             
                             fontWeight: FontWeight.w700,
