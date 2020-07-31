@@ -41,7 +41,7 @@ class Year4 extends StatelessWidget {
                           color: Colors.black87,
                         ),
                       ),
-                      Text("  maverick.ai.code@gmail.com",
+                      Text("  maverik.ai.code@gmail.com",
                         style: TextStyle(
                           fontSize: 18,
                           color: Color(0xFF06292e),

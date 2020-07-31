@@ -122,7 +122,7 @@ class SCE extends StatelessWidget {
               ]
           ),
           
-          content: new Text("   Brought to you soon with\n           our next Update."),
+          content: new Text("     Brought to you soon with\n               our next Update."),
 
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
