@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "148837137348",
+    "firebase_url": "https://kiit-archives.firebaseio.com",
+    "project_id": "kiit-archives",
+    "storage_bucket": "kiit-archives.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148837137348:android:a266261bf273b998334291",
+        "android_client_info": {
+          "package_name": "com.exa.kiit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148837137348-m0s9cc708911dqm9v888ea673qc8u1gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA37HUK7tTCXzGtpvXvfVoz4VKjHY_bXEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148837137348-m0s9cc708911dqm9v888ea673qc8u1gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

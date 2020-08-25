@@ -28,6 +28,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   url_launcher: ^5.5.0  
+  firebase_core: ^0.4.0+9
+  firebase_admob: ^0.9.3+4
+  flutter_native_admob: ^2.1.0+3
    
 
 
