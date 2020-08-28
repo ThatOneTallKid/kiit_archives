@@ -1,23 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kiit_app/views/home.dart';
 
 
-void main() {
-  
-  runApp(
-    MaterialApp(
-      home: MyApp(),
-      debugShowCheckedModeBanner: false,
-    )
-  );
-}
-
-class MyApp extends StatefulWidget {
+class Login extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _LoginState createState() => _LoginState();
 }
 
-class _MyAppState extends State<MyApp> { 
+class _LoginState extends State<Login> { 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -90,7 +81,7 @@ class _Layout1State extends State<Layout1> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    'assets/hey.png',
+                    'assets/images/hey.png',
                     width: 370,
                     height: 350,
                     fit: BoxFit.fitWidth,
@@ -186,7 +177,7 @@ class _Layout2State extends State<Layout2> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    'assets/hey.png',
+                    'assets/images/hey.png',
                     width: 300,
                     height: 280,
                     fit: BoxFit.fitWidth,
@@ -197,28 +188,40 @@ class _Layout2State extends State<Layout2> {
               ),
             ),
         
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 50.0),
-                      height: 40.0,
-                      child: Material(
-                        borderRadius: BorderRadius.circular(20.0),
-                        shadowColor: Colors.greenAccent,
-                        color: Color(0xFF06292e),
-                        elevation: 7.0,
-                        child: GestureDetector(
-                          onTap: () {},
-                          child: Center(
-                            child: Text(
-                              'Sign in with Google',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat'),
+          GestureDetector(
+            onTap: () {
+
+            },
+                      child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 50.0),
+                        height: 40.0,
+                        child: Material(
+                          borderRadius: BorderRadius.circular(20.0),
+                          shadowColor: Colors.greenAccent,
+                          color: Color(0xFF06292e),
+                          elevation: 7.0,
+                          child: GestureDetector(
+                            onTap: () {
+                               Navigator.of(context)
+                      .push(
+                        MaterialPageRoute(
+                          builder: (context) => Home()
+                        ),
+                      );
+                            },
+                            child: Center(
+                              child: Text(
+                                'Sign in with Google',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Montserrat'),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
+          ),
       
         ],
       ),
