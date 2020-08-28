@@ -92,28 +92,45 @@ class _Layout1State extends State<Layout1> {
               ),
             ),
           SizedBox(height: 10.0,),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 50.0),
-                      height: 40.0,
-                      child: Material(
-                        borderRadius: BorderRadius.circular(20.0),
-                        shadowColor: Colors.greenAccent,
-                        color: Color(0xFF06292e),
-                        elevation: 7.0,
-                        child: GestureDetector(
-                          onTap: () {},
-                          child: Center(
-                            child: Text(
-                              'Sign in with Google',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat'),
+          GestureDetector(
+            onTap: () {
+               Navigator.of(context)
+                      .push(
+                        MaterialPageRoute(
+                          builder: (context) => Home()
+                        ),
+                      );
+            },
+                      child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 50.0),
+                        height: 40.0,
+                        child: Material(
+                          borderRadius: BorderRadius.circular(20.0),
+                          shadowColor: Colors.greenAccent,
+                          color: Color(0xFF06292e),
+                          elevation: 7.0,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context)
+                      .push(
+                        MaterialPageRoute(
+                          builder: (context) => Home()
+                        ),
+                      );
+                            },
+                            child: Center(
+                              child: Text(
+                                'Sign in with Google',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Montserrat'),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
+          ),
       
         ],
       ),
@@ -190,7 +207,12 @@ class _Layout2State extends State<Layout2> {
         
           GestureDetector(
             onTap: () {
-
+               Navigator.of(context)
+                      .push(
+                        MaterialPageRoute(
+                          builder: (context) => Home()
+                        ),
+                      );
             },
                       child: Container(
               padding: EdgeInsets.symmetric(horizontal: 50.0),
