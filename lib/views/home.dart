@@ -4,8 +4,6 @@ import 'package:kiit_app/views/year1.dart';
 import 'package:kiit_app/views/year2.dart';
 import 'package:kiit_app/views/year3.dart';
 import 'package:kiit_app/views/year4.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
 
 
 class Home extends StatefulWidget {
@@ -21,8 +19,7 @@ class _HomeState extends State<Home> {
   var items = [{'name': 'Want to contribute?', 'value':0}];
    final barcolor = const Color(0xFF06292e);
   final textcolor = const Color(0xFF28bd90);
-  static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
-  final _nativeAdController = NativeAdmobController(); 
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -309,22 +306,7 @@ class _HomeState extends State<Home> {
                 ),
       ),
     ),
-     GestureDetector(
-       onTap:  () {
-
-       },
-       child: Container(
-         height: 200,
-         padding: EdgeInsets.all(10),
-         margin: EdgeInsets.only(bottom: 10.0),
-         child: NativeAdmob(
-           adUnitID: _adUnitID,
-           numberAds: 3,
-           controller: _nativeAdController,
-           type: NativeAdmobType.banner,
-         ),
-       ),
-     ),
+    
                   ],
                 ),
               ),),

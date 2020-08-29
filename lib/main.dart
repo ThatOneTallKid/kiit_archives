@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'dart:async';
 
-
 import 'package:kiit_app/views/login.dart';
+
+
+
 
 void main() => runApp(MyApp());
 
@@ -57,7 +60,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: 
+      Stack(
         fit: StackFit.expand,
         children: <Widget>[
           Container(
