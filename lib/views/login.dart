@@ -5,7 +5,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:kiit_app/views/home.dart';
 
-
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
@@ -53,7 +52,7 @@ class _Layout1State extends State<Layout1> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(15.0, 195.0, 0.0, 0.0),
+                  padding: EdgeInsets.fromLTRB(20.0, 195.0, 0.0, 0.0),
                   child: Text(
                     'There',
                     style:
@@ -61,7 +60,7 @@ class _Layout1State extends State<Layout1> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(220.0, 195.0, 0.0, 0.0),
+                  padding: EdgeInsets.fromLTRB(240.0, 195.0, 0.0, 0.0),
                   child: Text(
                     '.',
                     style: TextStyle(
