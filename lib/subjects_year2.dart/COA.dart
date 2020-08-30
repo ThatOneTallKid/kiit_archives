@@ -13,7 +13,7 @@ class _COAState extends State<COA> {
       appBar: AppBar(
         centerTitle: true,
         title: Center(
-          child: Text('COA            '),
+          child: Text('COA              '),
         ),
         backgroundColor: Color(0xFF06292e),
       ),
