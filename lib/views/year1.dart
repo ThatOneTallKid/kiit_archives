@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kiit_app/subjects_year1.dart/AEC.dart';
+import 'package:kiit_app/subjects_year1.dart/BEE.dart';
+import 'package:kiit_app/subjects_year1.dart/BMS.dart';
 import 'package:kiit_app/subjects_year1.dart/EVS.dart';
 import 'package:kiit_app/subjects_year1.dart/E_graphics.dart';
 import 'package:kiit_app/subjects_year1.dart/biology.dart';
@@ -351,8 +354,10 @@ class Year1 extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    launch(
-                        'https://drive.google.com/drive/folders/1G6aE0wa7luOnRT5zE5I3W2vQcbtb7MpX?usp=sharing');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BEE()),
+                    );
                   },
                   child: InkWell(
                     child: Container(
@@ -390,8 +395,10 @@ class Year1 extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    launch(
-                        'https://drive.google.com/drive/folders/1OZR4mFgQh2Imyc7e9tZXC8Dbb_WkXdAV?usp=sharing');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AEC()),
+                    );
                   },
                   child: InkWell(
                     child: Container(
@@ -470,8 +477,10 @@ class Year1 extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    launch(
-                        'https://drive.google.com/drive/folders/1WP3kVfnHqn1yQLH8BjZ3_MhGJFXrK3j9?usp=sharing');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BMS()),
+                    );
                   },
                   child: InkWell(
                     child: Container(
