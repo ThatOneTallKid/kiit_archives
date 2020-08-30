@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:kiit_app/views/home.dart';
 
 import 'dart:async';
 
-import 'package:kiit_app/views/login.dart';
+
 
 
 
@@ -53,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void _navigateToHome(){
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (BuildContext context) => Login(),
+        builder: (BuildContext context) => Home(),
         )
     );
   }
