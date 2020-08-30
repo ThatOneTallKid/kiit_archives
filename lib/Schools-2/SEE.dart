@@ -628,6 +628,228 @@ class SEE extends StatelessWidget {
                   ),
                 ),
               ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1rimdsxrgB6P_8UTHqWf2RtLEpUwqjieE?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "ACT ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1TiOHNqiXAksk4q3ficAw87WDQWblQPVz?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "AEC ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1Qh6rFb58AFalQ5YbF5fpD-t1pdc7q5PQ?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "EWA ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1CAJd2wQ_Y3gSP9klXAWzrrb9sMq7BfH_?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "MMI ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1ycuS4rp3yBlhX0QGXo1h_SBMNT8ykhBf?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "PCS ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1GnU9GQSjvJ2X2ba60ynzHJLaK_PnSQq4?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "PMI ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ]),
           )
         ],
