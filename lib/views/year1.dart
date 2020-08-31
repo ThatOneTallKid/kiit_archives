@@ -9,7 +9,7 @@ import 'package:kiit_app/subjects_year1.dart/chem.dart';
 import 'package:kiit_app/subjects_year1.dart/math.dart';
 import 'package:kiit_app/subjects_year1.dart/pcom_langlab.dart';
 import 'package:kiit_app/subjects_year1.dart/physics.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class Year1 extends StatelessWidget {
   @override
