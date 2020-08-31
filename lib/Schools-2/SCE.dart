@@ -504,7 +504,7 @@ class SCE extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
+      /* bottomNavigationBar: BottomAppBar(
         elevation: 20,
         child: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
@@ -542,7 +542,7 @@ class SCE extends StatelessWidget {
           ),
         ),
         color: Color(0xFF06292e),
-      ),
+      ),*/
     );
   }
 }
