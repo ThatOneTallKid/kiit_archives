@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:kiit_app/subjects_year1.dart/AEC.dart';
 import 'package:kiit_app/subjects_year1.dart/BEE.dart';
 import 'package:kiit_app/subjects_year1.dart/BMS.dart';
@@ -9,7 +11,6 @@ import 'package:kiit_app/subjects_year1.dart/chem.dart';
 import 'package:kiit_app/subjects_year1.dart/math.dart';
 import 'package:kiit_app/subjects_year1.dart/pcom_langlab.dart';
 import 'package:kiit_app/subjects_year1.dart/physics.dart';
-
 
 class Year1 extends StatelessWidget {
   @override
@@ -30,6 +31,84 @@ class Year1 extends StatelessWidget {
           Expanded(
             child: ListView(
               children: <Widget>[
+                GestureDetector(
+                  onTap: () {
+                    launch(
+                        'https://drive.google.com/drive/folders/13yPArHBfq2yp-qY6E6HnJ4jWLwKS6BeH?usp=sharing');
+                  },
+                  child: InkWell(
+                    child: Container(
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                      height: 60,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: Color(0xFF06292e),
+                        ),
+                      ),
+                      child: Row(
+                        children: <Widget>[
+                          Image.asset("assets/images/books.png"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Ques Papers-I",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20,
+                                color: Color(0xFF0e6959),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    launch(
+                        'https://drive.google.com/drive/folders/1cYId6tljy39qFhRIXKdR3J3mXyyWxE6m?usp=sharing');
+                  },
+                  child: InkWell(
+                    child: Container(
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                      height: 60,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: Color(0xFF06292e),
+                        ),
+                      ),
+                      child: Row(
+                        children: <Widget>[
+                          Image.asset("assets/images/books.png"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: Text(
+                              "Ques Papers-II",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20,
+                                color: Color(0xFF0e6959),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
