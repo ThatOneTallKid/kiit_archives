@@ -12,8 +12,11 @@ class _CHEMState extends State<CHEM> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Center(
-          child: Text('CHEMISTRY          '),
+        title: Text(
+          "Chemistry",
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Color(0xFF06292e),
       ),

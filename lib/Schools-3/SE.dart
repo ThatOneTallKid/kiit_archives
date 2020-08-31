@@ -191,7 +191,7 @@ class SE extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
+      /*  bottomNavigationBar: BottomAppBar(
         elevation: 20,
         child: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
@@ -229,7 +229,7 @@ class SE extends StatelessWidget {
           ),
         ),
         color: Color(0xFF06292e),
-      ),
+      ),*/
     );
   }
 }
