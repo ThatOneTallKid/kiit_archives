@@ -34,8 +34,8 @@ class _EGRAPHState extends State<EGRAPH> {
                       child: GestureDetector(
                         child: Card(
                           shape: RoundedRectangleBorder(
-                            side:
-                                BorderSide(color: Color(0xFF06292e), width: 2),
+                            side: BorderSide(
+                                color: Color(0xFF66D2AB), width: 1.5),
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Column(
@@ -50,7 +50,10 @@ class _EGRAPHState extends State<EGRAPH> {
                                   )),
                               Padding(
                                 padding: const EdgeInsets.all(4.0),
-                                child: Text('SHEETS'),
+                                child: Text(
+                                  'SHEETS',
+                                  style: TextStyle(color: Color(0xFF06292e)),
+                                ),
                               ),
                             ],
                           ),

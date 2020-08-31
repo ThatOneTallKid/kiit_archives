@@ -34,8 +34,8 @@ class _PCOMState extends State<PCOM> {
                       child: GestureDetector(
                         child: Card(
                           shape: RoundedRectangleBorder(
-                            side:
-                                BorderSide(color: Color(0xFF06292e), width: 2),
+                            side: BorderSide(
+                                color: Color(0xFF66D2AB), width: 1.5),
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Column(
@@ -105,8 +105,8 @@ class _LanglabState extends State<Langlab> {
                       child: GestureDetector(
                         child: Card(
                           shape: RoundedRectangleBorder(
-                            side:
-                                BorderSide(color: Color(0xFF06292e), width: 2),
+                            side: BorderSide(
+                                color: Color(0xFF66D2AB), width: 1.5),
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Column(
