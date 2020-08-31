@@ -12,8 +12,11 @@ class _PCOMState extends State<PCOM> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Center(
-          child: Text('P. COM          '),
+        title: Text(
+          "PCOM",
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Color(0xFF06292e),
       ),
@@ -47,14 +50,14 @@ class _PCOMState extends State<PCOM> {
                                   )),
                               Padding(
                                 padding: const EdgeInsets.all(4.0),
-                                child: Text('SYLLABUS'),
+                                child: Text('FULL NOTES'),
                               ),
                             ],
                           ),
                         ),
                         onTap: () {
                           launch(
-                              "https://drive.google.com/file/d/1XRbIUW7Ag-CSUNE1kNiQnyGgTKcIZu_U/view?usp=sharing");
+                              "https://drive.google.com/file/d/11uOdVT6o1Yv6vqUCYhamArD2VSTTHP_s/view?usp=sharing");
                         },
                       ),
                     ),
@@ -80,8 +83,11 @@ class _LanglabState extends State<Langlab> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Center(
-          child: Text('LANG. LAB           '),
+        title: Text(
+          "Lang Lab",
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Color(0xFF06292e),
       ),

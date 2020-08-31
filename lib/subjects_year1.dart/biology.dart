@@ -9,17 +9,13 @@ class BIOLOGY extends StatefulWidget {
 class _BIOLOGYState extends State<BIOLOGY> {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints){
-        if(constraints.maxHeight > 800)
-        {
-          return Layout1();
-        }
-        else {
-          return Layout2();
-        }
+    return LayoutBuilder(builder: (context, constraints) {
+      if (constraints.maxHeight > 800) {
+        return Layout1();
+      } else {
+        return Layout2();
       }
-    );
+    });
   }
 }
 
@@ -29,9 +25,12 @@ class Layout1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Biology" , style: TextStyle(
-          color: Colors.white,
-        ),),
+        title: Text(
+          "Biology",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         backgroundColor: Color(0xFF06292e),
       ),
       body: Container(
@@ -118,16 +117,18 @@ class Layout1 extends StatelessWidget {
   }
 }
 
-
 class Layout2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Biology" , style: TextStyle(
-          color: Colors.white,
-        ),),
+        title: Text(
+          "Biology",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         backgroundColor: Color(0xFF06292e),
       ),
       body: Container(
@@ -151,8 +152,8 @@ class Layout2 extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Container(
-                                  height: 130,
-                                  width: 150,
+                                  height: 110,
+                                  width: 130,
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child:
@@ -160,7 +161,7 @@ class Layout2 extends StatelessWidget {
                                   )),
                               Padding(
                                 padding: const EdgeInsets.all(4.0),
-                                child: Text('IMPORTANT QUES'),
+                                child: Text('IMP QUES'),
                               ),
                             ],
                           ),
@@ -183,8 +184,8 @@ class Layout2 extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Container(
-                                height: 130,
-                                width: 150,
+                                height: 110,
+                                width: 130,
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Image.asset('assets/images/books.png'),
