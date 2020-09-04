@@ -96,7 +96,7 @@ class SE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/1636-notes-for-power-system-operation-and-control-psoc-by-rajkishore-swain?reading=true');
+                      'https://drive.google.com/drive/folders/1X19Ud90msqKmeM-zTUgSeskSE6a-Ql7U?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -133,7 +133,7 @@ class SE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/14222-note-for-microprocessor-and-microcontroller-mpmc-by-abhishek-singh');
+                      'https://drive.google.com/drive/folders/1XEyx5RXRdCZPkQv3Wt03EnQQXawUiJN7?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
