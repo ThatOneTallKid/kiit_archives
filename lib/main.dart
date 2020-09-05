@@ -3,8 +3,6 @@ import 'package:kiit_app/views/home.dart';
 
 import 'dart:async';
 
-//Rupanshi Chawda
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {

@@ -132,40 +132,8 @@ class SCE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      // return object of type Dialog
-                      return AlertDialog(
-                        title: Column(children: [
-                          Text(
-                            "Uh-Oh! Notes are\n    being written",
-                            style: TextStyle(color: Color(0xFF0e6959)),
-                          ),
-                          Image.asset(
-                            'assets/images/alert.gif',
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.contain,
-                          ),
-                        ]),
-                        content: new Text(
-                            "     Brought to you soon with\n               our next Update."),
-                        actions: <Widget>[
-                          // usually buttons at the bottom of the dialog
-                          new FlatButton(
-                            child: new Text(
-                              "Close",
-                              style: TextStyle(color: Colors.lightGreen),
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
+                  launch(
+                      'https://drive.google.com/file/d/1ALRVy5COM0nnv-KAYn5Ku0FO7FS7ac06/view?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -239,7 +207,7 @@ class SCE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/24420-note-for-formal-languages-and-automata-theory-flat-by-debasish-mahana?reading=true');
+                      'https://drive.google.com/file/d/19my7WDjSdWPt554rwN-PlNeQFztXwyPs/view?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -313,7 +281,7 @@ class SCE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/27631-note-for-computer-graphics-cg-by-animesh-dutta?reading=true');
+                      'https://drive.google.com/file/d/1Z3auzRUMu521KVvgzQDabwgfiwg8oQ9O/view?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -350,7 +318,7 @@ class SCE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/27617-note-for-compiler-design-cd-by-shubham-kumar?reading=true');
+                      'https://drive.google.com/file/d/1i6_hauEfl_lX_WtdW23QlZlcI6HcMHq2/view?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -387,44 +355,7 @@ class SCE extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   launch(
-                      'https://lecturenotes.in/notes/14184-note-for-artificial-intelligence-ai-by-sankarsan-sahoo?reading=true');
-                },
-                child: InkWell(
-                  child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    height: 60,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(25),
-                      border: Border.all(
-                        color: Color(0xFF06292e),
-                      ),
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Image.asset("assets/images/books.png"),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15),
-                          child: Text(
-                            "AI ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 20,
-                              color: Color(0xFF0e6959),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  launch(
-                      'https://lecturenotes.in/notes/38-notes-for-data-mining-and-data-warehousing-dmdw-by-verified-writer?reading=true');
+                      'https://drive.google.com/file/d/1Q9NFg4S9rq-7bnR9M65zCQRGqBPUqKo-/view?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -446,6 +377,43 @@ class SCE extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Text(
                             "DMDW ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/file/d/1BfC0t8Lg1pzc4ggdb75t3FjYenZH0VzG/view?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "AI ",
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
