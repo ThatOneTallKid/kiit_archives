@@ -3,29 +3,21 @@ import 'package:kiit_app/views/home.dart';
 
 import 'dart:async';
 
-
-
-
-
+//Rupanshi Chawda
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return 
-      MaterialApp(
+    return MaterialApp(
       theme:
           ThemeData(primaryColor: Colors.redAccent, accentColor: Colors.green),
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
-      
-    
   }
 }
-
-
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -37,32 +29,27 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    _mockCheckForSession().then(
-      (status) {
-        _navigateToHome();
-      }
-    );
-   
+    _mockCheckForSession().then((status) {
+      _navigateToHome();
+    });
   }
 
   Future<bool> _mockCheckForSession() async {
-    await Future.delayed(Duration(milliseconds: 3000),() {});
+    await Future.delayed(Duration(milliseconds: 3000), () {});
 
     return true;
   }
 
-  void _navigateToHome(){
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (BuildContext context) => Home(),
-        )
-    );
+  void _navigateToHome() {
+    Navigator.of(context).pushReplacement(MaterialPageRoute(
+      builder: (BuildContext context) => Home(),
+    ));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      Stack(
+      body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
           Container(
@@ -86,19 +73,18 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset('assets/images/appstore.png',
+                      Image.asset(
+                        'assets/images/appstore.png',
                         width: 195,
-
                         fit: BoxFit.fitWidth,
                         alignment: Alignment.topLeft,
-
                       ),
-
-                      Text("KiiT Archives",
-                      style: TextStyle(
-                      fontSize: 30,
-                      color: Color(0xFFCEEEE4),
-                      fontWeight: FontWeight.w800,
+                      Text(
+                        "KiiT Archives",
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Color(0xFFCEEEE4),
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                     ],
