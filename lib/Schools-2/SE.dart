@@ -313,40 +313,8 @@ class SE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      // return object of type Dialog
-                      return AlertDialog(
-                        title: Column(children: [
-                          Text(
-                            "Uh-Oh! Notes are\n    being written",
-                            style: TextStyle(color: Color(0xFF0e6959)),
-                          ),
-                          Image.asset(
-                            'assets/images/alert.gif',
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.contain,
-                          ),
-                        ]),
-                        content: new Text(
-                            "   Brought to you soon with\n           our next Update."),
-                        actions: <Widget>[
-                          // usually buttons at the bottom of the dialog
-                          new FlatButton(
-                            child: new Text(
-                              "Close",
-                              style: TextStyle(color: Colors.lightGreen),
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
+                  launch(
+                      'https://drive.google.com/drive/folders/1a-VXd3cDfyz2VrbgSfU8-zeupruO5fWi?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
