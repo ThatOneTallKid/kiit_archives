@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_native_admob/native_admob_controller.dart';
+import 'package:flutter_native_admob/flutter_native_admob.dart';
 
 class MATHS1 extends StatefulWidget {
   @override
@@ -20,6 +22,7 @@ class _MATHS1State extends State<MATHS1> {
 }
 
 class Layout1 extends StatelessWidget {
+   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -170,6 +173,8 @@ class _MATHS2State extends State<MATHS2> {
 }
 
 class Layout11 extends StatelessWidget {
+   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -305,11 +310,25 @@ class Layout11 extends StatelessWidget {
           ],
         ),
       ),
+       bottomNavigationBar: Container(
+              height: 70,
+             
+              
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
     );
   }
 }
 
 class Layout22 extends StatelessWidget {
+   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -445,6 +464,18 @@ class Layout22 extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: Container(
+              height: 70,
+             
+              
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
     );
   }
 }
