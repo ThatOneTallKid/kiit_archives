@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_native_admob/native_admob_controller.dart';
+import 'package:flutter_native_admob/flutter_native_admob.dart';
 
 class SC extends StatelessWidget {
+   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -282,45 +286,18 @@ class SC extends StatelessWidget {
           )
         ],
       ),
-      /*  bottomNavigationBar: BottomAppBar(
-        elevation: 20,
-        child: Container(
-          padding: EdgeInsets.symmetric(vertical: 10),
-          child: RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              style: TextStyle(),
-              children: [
-                TextSpan(
-                    text: 'Made with',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    )),
-                WidgetSpan(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 2.0,
-                    ),
-                    child: Icon(
-                      Icons.favorite,
-                      color: Colors.pink,
-                    ),
-                  ),
-                ),
-                TextSpan(
-                  text: 'By A&R',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-              ],
+        bottomNavigationBar: Container(
+              height: 70,
+             
+              
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
             ),
-          ),
-        ),
-        color: Color(0xFF06292e),
-      ),*/
     );
   }
 }

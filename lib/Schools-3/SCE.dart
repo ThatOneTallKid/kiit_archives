@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_native_admob/native_admob_controller.dart';
+import 'package:flutter_native_admob/flutter_native_admob.dart';
 
 class SCE extends StatelessWidget {
+  static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -130,6 +134,18 @@ class SCE extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+              height: 90,
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.only(bottom: 10.0),
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
               GestureDetector(
                 onTap: () {
                   launch(
@@ -315,6 +331,7 @@ class SCE extends StatelessWidget {
                   ),
                 ),
               ),
+              
               GestureDetector(
                 onTap: () {
                   launch(
@@ -426,6 +443,18 @@ class SCE extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+              height: 90,
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.only(bottom: 10.0),
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
             ]),
           )
         ],

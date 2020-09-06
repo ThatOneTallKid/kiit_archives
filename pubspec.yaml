@@ -17,8 +17,7 @@ environment:
   sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
-  firebase_auth: ^0.15.3+1
-  google_sign_in: ^4.1.1
+  firebase_admob: ^0.9.3+4
   flutter:
     sdk: flutter
 
@@ -31,6 +30,8 @@ dev_dependencies:
     sdk: flutter
   url_launcher: ^5.5.0  
   firebase_core: ^0.4.0+9
+  
+  flutter_native_admob: ^2.1.0+3
  
    
 
