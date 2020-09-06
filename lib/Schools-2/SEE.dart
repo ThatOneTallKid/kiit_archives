@@ -62,40 +62,8 @@ class SEE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      // return object of type Dialog
-                      return AlertDialog(
-                        title: Column(children: [
-                          Text(
-                            "Uh-Oh! Notes are\n    being written",
-                            style: TextStyle(color: Color(0xFF0e6959)),
-                          ),
-                          Image.asset(
-                            'assets/images/alert.gif',
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.contain,
-                          ),
-                        ]),
-                        content: new Text(
-                            "   Brought to you soon with\n          our next Update."),
-                        actions: <Widget>[
-                          // usually buttons at the bottom of the dialog
-                          new FlatButton(
-                            child: new Text(
-                              "Close",
-                              style: TextStyle(color: Colors.lightGreen),
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
+                  launch(
+                      'https://drive.google.com/drive/folders/1xcC375vcCuf6qDoHd_4_7mPsLphXyHuV?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -508,40 +476,8 @@ class SEE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      // return object of type Dialog
-                      return AlertDialog(
-                        title: Column(children: [
-                          Text(
-                            "Uh-Oh! Notes are\n    being written",
-                            style: TextStyle(color: Color(0xFF0e6959)),
-                          ),
-                          Image.asset(
-                            'assets/images/alert.gif',
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.contain,
-                          ),
-                        ]),
-                        content: new Text(
-                            "   Brought to you soon with\n           our next Update."),
-                        actions: <Widget>[
-                          // usually buttons at the bottom of the dialog
-                          new FlatButton(
-                            child: new Text(
-                              "Close",
-                              style: TextStyle(color: Colors.lightGreen),
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
+                  launch(
+                      'https://drive.google.com/drive/folders/1a-VXd3cDfyz2VrbgSfU8-zeupruO5fWi?usp=sharing');
                 },
                 child: InkWell(
                   child: Container(
@@ -575,87 +511,6 @@ class SEE extends StatelessWidget {
                   ),
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      // return object of type Dialog
-                      return AlertDialog(
-                        title: Column(children: [
-                          Text(
-                            "Uh-Oh! Notes are\n    being written",
-                            style: TextStyle(color: Color(0xFF0e6959)),
-                          ),
-                          Image.asset(
-                            'assets/images/alert.gif',
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.contain,
-                          ),
-                        ]),
-                        content: new Text(
-                            "   Brought to you soon with\n           our next Update."),
-                        actions: <Widget>[
-                          // usually buttons at the bottom of the dialog
-                          new FlatButton(
-                            child: new Text(
-                              "Close",
-                              style: TextStyle(color: Colors.lightGreen),
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                },
-                child: InkWell(
-                  child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    height: 60,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(25),
-                      border: Border.all(
-                        color: Color(0xFF06292e),
-                      ),
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Image.asset("assets/images/books.png"),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15),
-                          child: Text(
-                            "PMI ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 20,
-                              color: Color(0xFF0e6959),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-              height: 90,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.only(bottom: 10.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID: _adUnitID,
-                numberAds: 3,
-                controller: _nativeAdController,
-                type: NativeAdmobType.banner,
-              ),
-            ),
               GestureDetector(
                 onTap: () {
                   launch(
@@ -730,6 +585,18 @@ class SEE extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+              height: 90,
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.only(bottom: 10.0),
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
               GestureDetector(
                 onTap: () {
                   launch(
@@ -829,6 +696,80 @@ class SEE extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Text(
                             "PCS ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1khWMFvq5804VXfJBbJbIImpEm4zLGTdA?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "LCS ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 20,
+                              color: Color(0xFF0e6959),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launch(
+                      'https://drive.google.com/drive/folders/1100MtKZnkEBS9SQIzL_DY0D6hZeUqEsG?usp=sharing');
+                },
+                child: InkWell(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        color: Color(0xFF06292e),
+                      ),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Image.asset("assets/images/books.png"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            "DC & Sync ",
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
