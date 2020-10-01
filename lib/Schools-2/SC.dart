@@ -4,7 +4,7 @@ import 'package:flutter_native_admob/native_admob_controller.dart';
 import 'package:flutter_native_admob/flutter_native_admob.dart';
 
 class SC extends StatelessWidget {
-   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+   static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
   final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {

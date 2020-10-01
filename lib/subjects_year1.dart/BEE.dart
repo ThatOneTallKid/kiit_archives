@@ -22,7 +22,7 @@ class _BEEState extends State<BEE> {
 }
 
 class Layout1 extends StatelessWidget {
-  static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
   final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
@@ -176,7 +176,7 @@ class Layout1 extends StatelessWidget {
 }
 
 class Layout2 extends StatelessWidget {
-  static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+  static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
   final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {

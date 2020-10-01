@@ -22,7 +22,8 @@ class _MATHS1State extends State<MATHS1> {
 }
 
 class Layout1 extends StatelessWidget {
-   
+    static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,11 +85,26 @@ class Layout1 extends StatelessWidget {
           ],
         ),
       ),
+       bottomNavigationBar: Container(
+              height: 70,
+             
+              
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
     );
+
   }
 }
 
 class Layout2 extends StatelessWidget {
+   static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
+  final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -150,6 +166,18 @@ class Layout2 extends StatelessWidget {
           ],
         ),
       ),
+       bottomNavigationBar: Container(
+              height: 70,
+             
+              
+              child: NativeAdmob(
+                // Your ad unit id
+                adUnitID: _adUnitID,
+                numberAds: 3,
+                controller: _nativeAdController,
+                type: NativeAdmobType.banner,
+              ),
+            ),
     );
   }
 }
@@ -173,7 +201,7 @@ class _MATHS2State extends State<MATHS2> {
 }
 
 class Layout11 extends StatelessWidget {
-   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+   static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
   final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
@@ -327,7 +355,7 @@ class Layout11 extends StatelessWidget {
 }
 
 class Layout22 extends StatelessWidget {
-   static const _adUnitID = "ca-app-pub-3940256099942544/2247696110";
+   static const _adUnitID = "ca-app-pub-4979471076609313/4909419089";
   final _nativeAdController = NativeAdmobController();
   @override
   Widget build(BuildContext context) {
