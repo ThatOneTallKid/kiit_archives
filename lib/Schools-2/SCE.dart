@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:kiit_app/subjects_year2.dart/EE.dart';
 
 class SCE extends StatelessWidget {
   @override
