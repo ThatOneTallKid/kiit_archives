@@ -134,18 +134,18 @@ class SCE extends StatelessWidget {
                   ),
                 ),
               ),
-               Container(
-              height: 90,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.only(bottom: 10.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID: _adUnitID,
-                numberAds: 3,
-                controller: _nativeAdController,
-                type: NativeAdmobType.banner,
+              Container(
+                height: 90,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.only(bottom: 10.0),
+                child: NativeAdmob(
+                  // Your ad unit id
+                  adUnitID: _adUnitID,
+                  numberAds: 3,
+                  controller: _nativeAdController,
+                  type: NativeAdmobType.banner,
+                ),
               ),
-            ),
               GestureDetector(
                 onTap: () {
                   launch(
@@ -296,8 +296,10 @@ class SCE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  launch(
-                      'https://drive.google.com/drive/folders/11ieDgN5d0LjW2rIlgzZN3ML988Qb2mB4?usp=sharing');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DMSSCREEN()),
+                  );
                 },
                 child: InkWell(
                   child: Container(
@@ -554,17 +556,17 @@ class SCE extends StatelessWidget {
                 ),
               ),
               Container(
-              height: 90,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.only(bottom: 10.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID: _adUnitID,
-                numberAds: 3,
-                controller: _nativeAdController,
-                type: NativeAdmobType.banner,
+                height: 90,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.only(bottom: 10.0),
+                child: NativeAdmob(
+                  // Your ad unit id
+                  adUnitID: _adUnitID,
+                  numberAds: 3,
+                  controller: _nativeAdController,
+                  type: NativeAdmobType.banner,
+                ),
               ),
-            ),
               GestureDetector(
                 onTap: () {
                   launch(
@@ -645,6 +647,104 @@ class SCE extends StatelessWidget {
         ),
         color: Color(0xFF06292e),
       ),*/
+    );
+  }
+}
+
+class DMSSCREEN extends StatefulWidget {
+  @override
+  _DMSSCREENState createState() => _DMSSCREENState();
+}
+
+class _DMSSCREENState extends State<DMSSCREEN> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("DMS"),
+      ),
+      backgroundColor: Colors.white,
+      body: Container(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10.0, 4.0, 8.0, 0.0),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: GestureDetector(
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                                color: Color(0xFF66D2AB), width: 1.5),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                  height: 130,
+                                  width: 150,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child:
+                                        Image.asset('assets/images/books.png'),
+                                  )),
+                              Padding(
+                                padding: const EdgeInsets.all(4.0),
+                                child: Text('FULL NOTES'),
+                              ),
+                            ],
+                          ),
+                        ),
+                        onTap: () {
+                          launch(
+                              "https://drive.google.com/file/d/1lv4ojpIxck2nDEnXm-b_qEZ6vJb8WpQq/view?usp=sharing");
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 4, 10, 4.0),
+                      child: GestureDetector(
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                                color: Color(0xFF66D2AB), width: 1.5),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                height: 130,
+                                width: 150,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Image.asset('assets/images/books.png'),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Text('IMPORTANT TOPIC'),
+                              )
+                            ],
+                          ),
+                        ),
+                        onTap: () {
+                          launch(
+                              "https://drive.google.com/folderview?id=1TlJ6mfbAOTGcrIABVdV5PiXLyurgkiZq");
+                        },
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
