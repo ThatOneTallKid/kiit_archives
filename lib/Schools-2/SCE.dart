@@ -280,9 +280,11 @@ class SCE extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  launch(
-                      'https://drive.google.com/drive/folders/11ieDgN5d0LjW2rIlgzZN3ML988Qb2mB4?usp=sharing');
-                },
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => EE()),
+                    );
+                  },
                 child: InkWell(
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
