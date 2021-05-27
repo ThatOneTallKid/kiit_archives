@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import 'package:kiit_app/app/modules/home/bindings/home_binding.dart';
-import 'package:kiit_app/app/modules/home/views/home_view.dart';
+import 'package:kiit_archives/app/modules/home/bindings/home_binding.dart';
+import 'package:kiit_archives/app/modules/home/views/home_view.dart';
 
 part 'app_routes.dart';
 
