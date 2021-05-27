@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
 class AuthService extends GetxService {
-
   @override
   void onInit() {
     // TODO: implement onInit
@@ -19,4 +18,8 @@ class AuthService extends GetxService {
     // TODO: implement onClose
     super.onClose();
   }
+
+  void login() {}
+
+  void logout() {}
 }
