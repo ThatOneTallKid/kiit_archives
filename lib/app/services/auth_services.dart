@@ -24,7 +24,7 @@ class AuthService extends GetxService {
     super.onClose();
   }
 
-  static Future<FirebaseApp> initializeFirebase() async {
+  Future<FirebaseApp> initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
 
     // TODO: Add auto login logic
@@ -32,7 +32,7 @@ class AuthService extends GetxService {
     return firebaseApp;
   }
 
-  static Future<User?> signInWithGoogle({required BuildContext context}) async {
+  Future<User?> signInWithGoogle() async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
 
@@ -72,7 +72,7 @@ class AuthService extends GetxService {
     return user;
   }
 
-  static Future<void> signOut({required BuildContext context}) async {
+  Future<void> signOut({required BuildContext context}) async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
 
     try {
