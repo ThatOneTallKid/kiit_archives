@@ -33,7 +33,7 @@ class LoginView extends GetView<LoginController> {
                 onPressed: () async {
                   User? user = await authService.signInWithGoogle();
                   if (user != null) {
-                    Get.to(HomeView());
+                    Get.off(HomeView());
                   }
                 },
               );
