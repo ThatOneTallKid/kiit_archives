@@ -9,6 +9,11 @@
 .history
 .svn/
 
+# Release Files
+android/key.properties
+android/key.jks
+android/app/google-services.json
+
 # IntelliJ related
 *.iml
 *.ipr
