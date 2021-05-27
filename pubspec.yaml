@@ -1,19 +1,27 @@
-name: kiit_app
+name: kiit_archives
 version: 1.0.2+2
 description: A new Flutter application.
-environment: 
-  sdk: '>=2.13.0 <3.0.0'
+environment:
+  sdk: ">=2.13.0 <3.0.0"
 
-dependencies: 
-  cupertino_icons: ^0.1.2
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Project Structure
   get: 4.1.4
-  flutter: 
+
+  # Authentication
+  firebase_auth: ^1.2.0
+  firebase_core: ^1.2.0
+  google_sign_in: ^5.0.4
+
+  # Icons
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
     sdk: flutter
 
-dev_dependencies: 
-  flutter_test: 
-    sdk: flutter
-
-flutter: 
+flutter:
   uses-material-design: true
-
