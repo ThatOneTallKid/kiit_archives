@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter/material.dart';
 
 class HomeController extends GetxController with SingleGetTickerProviderMixin {
-  late final TabController tb;
-  ScrollController scrollController = ScrollController();
+  final List<String> tabList = [
+    "Home",
+    "Archives",
+    "Bookmark",
+    "Downloads",
+  ];
+
+  late final TabController tabController;
+  final ScrollController scrollController = ScrollController();
+  late final List<Tab> tabs;
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    tabs = tabList.map((e) => Tab(text: e)).toList();
+
+    tabController = TabController(length: tabList.length, vsync: this);
     super.onInit();
-    tb = TabController(length: 4, vsync: this);
   }
 }
