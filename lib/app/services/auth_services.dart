@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:kiit_archives/app/modules/home/views/home_view.dart';
 import 'package:kiit_archives/app/modules/login/views/login_view.dart';
 
 class AuthService extends GetxService {
