@@ -26,9 +26,7 @@ class AuthService extends GetxService {
 
   Future<FirebaseApp> initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
-
     User? user = FirebaseAuth.instance.currentUser;
-
     if (user == null) {
       Get.off(LoginView());
     }
@@ -72,7 +70,6 @@ class AuthService extends GetxService {
             "title", 'Error occurred using Google Sign-In. Try again.');
       }
     }
-
     return user;
   }
 

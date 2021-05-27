@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 
 class Semester extends StatelessWidget {
   final int semN;
-  final String semsuffix;
+  final String semSuffix;
   final String semS;
-  Semester({required this.semN, required this.semsuffix, required this.semS});
+  Semester({
+    required this.semN,
+    required this.semSuffix,
+    required this.semS,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +54,7 @@ class Semester extends StatelessWidget {
               top: 15.0,
               left: 40.0,
               child: Text(
-                "$semsuffix",
+                "$semSuffix",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
