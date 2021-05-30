@@ -3,7 +3,6 @@ import 'package:flutter/rendering.dart';
 
 import 'package:get/get.dart';
 import 'package:kiit_archives/app/modules/home/views/pages/bookmark.dart';
-import 'package:kiit_archives/app/modules/login/views/login_view.dart';
 
 import '../controllers/home_controller.dart';
 import 'pages/archives_page.dart';
@@ -11,24 +10,41 @@ import 'pages/downloads.dart';
 import 'pages/home_page.dart';
 
 class HomeView extends GetView<HomeController> {
+  Color getColor(Set<MaterialState> states) {
+    const Set<MaterialState> interactiveStates = <MaterialState>{
+      MaterialState.pressed,
+      MaterialState.hovered,
+      MaterialState.focused,
+    };
+    if (states.any(interactiveStates.contains)) {
+      return Colors.transparent;
+    }
+    return Colors.transparent;
+  }
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: controller.tabList.length,
       child: Scaffold(
         appBar: AppBar(
-          actions: [
-            IconButton(
-              icon: Icon(Icons.login),
-              onPressed: () {
-                Get.to(LoginView());
-              },
-            ),
-          ],
+          backgroundColor: Colors.white,
           elevation: 0,
           flexibleSpace: Container(
             alignment: Alignment.bottomCenter,
             child: TabBar(
+                overlayColor: MaterialStateProperty.resolveWith(getColor),
+                labelColor: Colors.black,
+                unselectedLabelStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                labelStyle: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                ),
+                unselectedLabelColor: Colors.grey,
+                indicatorColor: Colors.transparent,
                 isScrollable: true,
                 controller: controller.tabController,
                 tabs: controller.tabs),
@@ -43,6 +59,14 @@ class HomeView extends GetView<HomeController> {
             BookmarkPage(),
             DownloadsPage(),
           ],
+        ),
+        bottomNavigationBar: Container(
+          height: kBottomNavigationBarHeight,
+          color: Colors.white,
+          child: ListTile(
+            leading: Icon(Icons.account_circle_rounded, size: 35),
+            // trailing: Icon(Icons.settings, size: 35),
+          ),
         ),
       ),
     );
