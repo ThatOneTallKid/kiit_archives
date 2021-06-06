@@ -2,42 +2,45 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:kiit_archives/app/modules/login/views/login_view.dart';
 
 class AuthService extends GetxService {
+  late final FirebaseApp firebaseApp;
+  late final FirebaseAuth auth;
+  late final GoogleSignIn googleSignIn;
+  User? user;
+
+  RxBool isSignIn = false.obs;
+  RxBool signIningIn = false.obs;
+
   @override
-  void onInit() {
-    // TODO: implement onInit
+  void onInit() async {
+    firebaseApp = await Firebase.initializeApp();
+    user = FirebaseAuth.instance.currentUser;
+    auth = FirebaseAuth.instance;
+    googleSignIn = GoogleSignIn();
+    await googleSignIn.isSignedIn()
+        ? isSignIn.value = true
+        : isSignIn.value = false;
     super.onInit();
   }
 
   @override
-  void onReady() async {
-    // TODO: implement onReady
-    super.onReady();
-  }
-
-  @override
   void onClose() async {
-    // TODO: implement onClose
     super.onClose();
   }
 
-  Future<FirebaseApp> initializeFirebase() async {
-    FirebaseApp firebaseApp = await Firebase.initializeApp();
-    User? user = FirebaseAuth.instance.currentUser;
-    if (user == null) {
-      Get.off(LoginView());
-    }
+  User? getUser() => user;
 
-    return firebaseApp;
+  void onTapSignInAndOut() async {
+    if (!await googleSignIn.isSignedIn()) {
+      signOut();
+    } else {
+      await signInWithGoogle();
+    }
   }
 
   Future<User?> signInWithGoogle() async {
-    FirebaseAuth auth = FirebaseAuth.instance;
-    User? user;
-
+    signIningIn.value = true;
     final GoogleSignIn googleSignIn = GoogleSignIn();
 
     final GoogleSignInAccount? googleSignInAccount =
@@ -57,6 +60,16 @@ class AuthService extends GetxService {
             await auth.signInWithCredential(credential);
 
         user = userCredential.user;
+
+        if (user!.email!.contains('kiit.ac.in')) {
+          Get.snackbar("${user!.displayName}", "Welcom to KIIT-Archive");
+          isSignIn.value = true;
+          return user;
+        } else {
+          Get.snackbar("Error", 'Use KIIT email to login');
+          await signOut();
+          return null;
+        }
       } on FirebaseAuthException catch (e) {
         if (e.code == 'account-exists-with-different-credential') {
           Get.snackbar("Title",
@@ -66,23 +79,19 @@ class AuthService extends GetxService {
               'Error occurred while accessing credentials. Try again.');
         }
       } catch (e) {
+        await signOut();
         Get.snackbar(
             "title", 'Error occurred using Google Sign-In. Try again.');
+        return null;
       }
     }
-    return user;
+    signIningIn.value = false;
   }
 
   Future<void> signOut() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
-
-    try {
-      if (!kIsWeb) {
-        await googleSignIn.signOut();
-      }
-      await FirebaseAuth.instance.signOut();
-    } catch (e) {
-      Get.snackbar("title", 'Error signing out. Try again.');
-    }
+    await auth.signOut();
+    await googleSignIn.signOut();
+    isSignIn.value = false;
   }
 }
