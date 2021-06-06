@@ -3,6 +3,8 @@ import 'package:flutter/rendering.dart';
 
 import 'package:get/get.dart';
 import 'package:kiit_archives/app/modules/home/views/pages/bookmark.dart';
+import 'package:kiit_archives/app/modules/login/views/login_view.dart';
+import 'package:kiit_archives/app/services/auth_services.dart';
 
 import '../controllers/home_controller.dart';
 import 'pages/archives_page.dart';
@@ -24,13 +26,7 @@ class HomeView extends GetView<HomeController> {
           ),
           backgroundColor: Colors.white,
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.account_circle_rounded,
-                color: Colors.black54,
-              ),
-            )
+            userIcon(),
           ],
           elevation: 0,
           bottom: TabBar(
@@ -59,6 +55,32 @@ class HomeView extends GetView<HomeController> {
             BookmarkPage(),
             DownloadsPage(),
           ],
+        ),
+      ),
+    );
+  }
+
+  Obx userIcon() {
+    final AuthService auth = Get.find<AuthService>();
+    return Obx(
+      () => Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GestureDetector(
+          onTap: () => Get.to(LoginView()),
+          child: auth.isSignIn.value
+              ? auth.user!.photoURL == null
+                  ? Icon(
+                      Icons.account_circle_rounded,
+                      color: Colors.black54,
+                    )
+                  : CircleAvatar(
+                      radius: 15,
+                      backgroundImage: NetworkImage(auth.user!.photoURL!),
+                    )
+              : Icon(
+                  Icons.account_circle_rounded,
+                  color: Colors.black54,
+                ),
         ),
       ),
     );
