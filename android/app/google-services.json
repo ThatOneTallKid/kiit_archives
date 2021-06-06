@@ -15,11 +15,51 @@
       },
       "oauth_client": [
         {
+          "client_id": "148837137348-4d1or627lvvg4pjj1eugq3s5bb32gpam.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exa.kiit_app",
+            "certificate_hash": "57782d283aaeeaf8a4928260c31b46e4d1301817"
+          }
+        },
+        {
+          "client_id": "148837137348-63om1d0rkdjd0o2qt5ri5gequogq102u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exa.kiit_app",
+            "certificate_hash": "991c5b0284a25c1ec1933045dae9a0aef2f848f8"
+          }
+        },
+        {
           "client_id": "148837137348-86l0b13ir4tr40vqpotbd0co59o456gr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.exa.kiit_app",
             "certificate_hash": "5e9649de79df50a7244bc1e643eb163bc98acace"
+          }
+        },
+        {
+          "client_id": "148837137348-cgrp4dgq72u1mintf4pfo33off4prmpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exa.kiit_app",
+            "certificate_hash": "bfb19864fbfcd6d4574a2fbdafc4c1b2be49de83"
+          }
+        },
+        {
+          "client_id": "148837137348-e2lc9r6548416l4h7vpprmgl07vuph8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exa.kiit_app",
+            "certificate_hash": "11c60a557cc9c3c8422da8340766f9735804e609"
+          }
+        },
+        {
+          "client_id": "148837137348-uekvov5pmj2tm3fr1ra3rlu6pgqf6ms0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exa.kiit_app",
+            "certificate_hash": "2c202755a6d43544ee340fa8d7a9f88f159c5d63"
           }
         },
         {
