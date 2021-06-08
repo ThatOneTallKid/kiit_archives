@@ -4,18 +4,18 @@ class Semester extends StatelessWidget {
   final int semN;
   final String semSuffix;
   final String semS;
+  final Function onTap;
   Semester({
     required this.semN,
     required this.semSuffix,
     required this.semS,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print("Flutter");
-      },
+      onTap: () => onTap(),
       child: Container(
         width: 150.0,
         height: 150.0,
