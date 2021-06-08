@@ -16,45 +16,48 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: controller.tabList.length,
-      child: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text(
-            'KIIT Archives',
-            style:
-                TextStyle(fontWeight: FontWeight.bold, color: Colors.black45),
+      child: WillPopScope(
+        onWillPop: () => controller.backButtonController(),
+        child: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            title: Text(
+              'KIIT Archives',
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black45),
+            ),
+            backgroundColor: Colors.white,
+            actions: [
+              userIcon(),
+            ],
+            elevation: 0,
+            bottom: TabBar(
+                overlayColor: MaterialStateProperty.resolveWith(getColor),
+                labelColor: Colors.black,
+                unselectedLabelStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                labelStyle: TextStyle(
+                  fontSize: 27,
+                  fontWeight: FontWeight.bold,
+                ),
+                unselectedLabelColor: Colors.grey,
+                indicatorColor: Colors.transparent,
+                isScrollable: true,
+                controller: controller.tabController,
+                tabs: controller.tabs),
           ),
-          backgroundColor: Colors.white,
-          actions: [
-            userIcon(),
-          ],
-          elevation: 0,
-          bottom: TabBar(
-              overlayColor: MaterialStateProperty.resolveWith(getColor),
-              labelColor: Colors.black,
-              unselectedLabelStyle: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-              labelStyle: TextStyle(
-                fontSize: 23,
-                fontWeight: FontWeight.bold,
-              ),
-              unselectedLabelColor: Colors.grey,
-              indicatorColor: Colors.transparent,
-              isScrollable: true,
-              controller: controller.tabController,
-              tabs: controller.tabs),
-        ),
-        body: TabBarView(
-          controller: controller.tabController,
-          physics: BouncingScrollPhysics(),
-          children: [
-            HomePage(),
-            ArchivesPage(),
-            BookmarkPage(),
-            DownloadsPage(),
-          ],
+          body: TabBarView(
+            controller: controller.tabController,
+            physics: BouncingScrollPhysics(),
+            children: [
+              HomePage(),
+              ArchivesPage(),
+              BookmarkPage(),
+              DownloadsPage(),
+            ],
+          ),
         ),
       ),
     );

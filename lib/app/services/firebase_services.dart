@@ -52,8 +52,7 @@ class FirebaseService extends GetxService {
     uploading.value = true;
 
     File file = File(path);
-    Reference ref = storage.ref().child(DateTime.now().toString());
-    print(3);
+    Reference ref = storage.ref().child(DateTime.now().microsecond.toString());
     TaskSnapshot snapshot = await ref.putFile(file);
 
     if (snapshot.state == TaskState.success) {
